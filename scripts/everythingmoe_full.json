@@ -1,0 +1,1290 @@
+{
+  "scrapedAt": "2026-09-26T20:32:12.335Z",
+  "animeTotal": 90,
+  "mangaTotal": 93,
+  "anime": [
+    {
+      "rank": 1,
+      "name": "Anikoto",
+      "url": "https://anikototv.to/home",
+      "filters": "Scraper, Self-host, Modern interface, Dub friendly, Hard-sub, Soft-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 2,
+      "name": "animepahe",
+      "url": "https://animepahe.pw",
+      "filters": "Easy download, Self-host, Old reliable, Simple interface, Hard-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 3,
+      "name": "Re:Anime",
+      "url": "https://reanime.to/home",
+      "filters": "Self-host, Soft-sub, Modern interface, Dub friendly, Easy download",
+      "selfHosted": true
+    },
+    {
+      "rank": 4,
+      "name": "Miruro",
+      "url": "https://www.miruro.to/",
+      "filters": "Scraper, Self-host, Modern interface, Easy download, Dub friendly, Hard-sub, Soft-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 5,
+      "name": "MKissa",
+      "url": "https://mkissa.to/anime",
+      "filters": "Self-host, Easy download, Dub friendly, Hard-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 6,
+      "name": "AniZone",
+      "url": "https://anizone.to/",
+      "filters": "Self-host, Soft-sub, Hard-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 7,
+      "name": "Senshi",
+      "url": "https://senshi.to/",
+      "filters": "Self-host, Modern interface, Hard-sub, Dub friendly",
+      "selfHosted": true
+    },
+    {
+      "rank": 8,
+      "name": "Crunchyroll",
+      "url": "https://www.crunchyroll.com",
+      "filters": "Modern interface, Old reliable, Dub friendly, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 9,
+      "name": "KickAssAnime",
+      "url": "https://kaa.lt/",
+      "filters": "Self-host, Modern interface, Soft-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 10,
+      "name": "aniwaves.ru",
+      "url": "https://aniwaves.ru/home",
+      "filters": "Self-host, Hard-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 11,
+      "name": "Anime Nexus",
+      "url": "https://anime.nexus/",
+      "filters": "Self-host, Modern interface, Soft-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 12,
+      "name": "Bilibili",
+      "url": "https://www.bilibili.tv/en/anime",
+      "filters": "Modern interface, Soft-sub, Dub friendly",
+      "selfHosted": false
+    },
+    {
+      "rank": 13,
+      "name": "YouTube",
+      "url": "https://youtube.com/",
+      "filters": "Modern interface, Soft-sub, Dub friendly",
+      "selfHosted": false
+    },
+    {
+      "rank": 14,
+      "name": "ani.pm",
+      "url": "https://ani.pm/",
+      "filters": "Self-host, Soft-sub, Hard-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 15,
+      "name": "AnimeOnsen",
+      "url": "https://www.animeonsen.xyz/",
+      "filters": "Self-host, Modern interface, Dub friendly, Soft-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 16,
+      "name": "Anify",
+      "url": "https://anify.to/",
+      "filters": "Hard-sub, Self-host, Third party",
+      "selfHosted": true
+    },
+    {
+      "rank": 17,
+      "name": "AniSnatch",
+      "url": "https://anisnatch.to/home",
+      "filters": "Scraper, Hard-sub, Easy download, Dub friendly, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 18,
+      "name": "AnimeX",
+      "url": "https://animex.one/home",
+      "filters": "Scraper, Hard-sub, Soft-sub, Self-host, Easy download, Modern interface",
+      "selfHosted": true
+    },
+    {
+      "rank": 19,
+      "name": "AnimeParadise",
+      "url": "https://www.animeparadise.moe/",
+      "filters": "Self-host, Simple interface, Soft-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 20,
+      "name": "AniHQ",
+      "url": "https://anihq.cc/home/",
+      "filters": "Third party, Modern interface, Dub friendly, Hard-sub, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 21,
+      "name": "AnimeHeaven",
+      "url": "https://animeheaven.me/",
+      "filters": "Self-host, Simple interface, Easy download, Hard-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 22,
+      "name": "Shiro",
+      "url": "https://shiro.so/",
+      "filters": "Self-host, Scraper, Modern interface, Soft-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 23,
+      "name": "ANIMEGG",
+      "url": "https://www.animegg.org/",
+      "filters": "Easy download, Self-host, Old reliable, Dub friendly, Hard-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 24,
+      "name": "Animotvslash",
+      "url": "https://www.animotvslash.org/",
+      "filters": "Self-host, Hard-sub, Soft-sub, Easy download",
+      "selfHosted": true
+    },
+    {
+      "rank": 25,
+      "name": "Xanime",
+      "url": "https://xanime.me/",
+      "filters": "Self-host, Soft-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 26,
+      "name": "Anikage",
+      "url": "https://anikage.cc/home",
+      "filters": "Scraper, Modern interface, Hard-sub, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 27,
+      "name": "Lunar",
+      "url": "https://lunarx.to/anime",
+      "filters": "Scraper, Self-host, Modern interface, Soft-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 28,
+      "name": "Anidap",
+      "url": "https://anidap.lol/home",
+      "filters": "Scraper, Modern interface, Easy download, Hard-sub, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 29,
+      "name": "Just4Anime",
+      "url": "https://just4anime.online/",
+      "filters": "mult",
+      "selfHosted": false
+    },
+    {
+      "rank": 30,
+      "name": "Anistream",
+      "url": "https://anistream.one/home",
+      "filters": "Scraper, Soft-sub, Hard-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 31,
+      "name": "2Dhive",
+      "url": "https://2dhive.com/",
+      "filters": "Self-host, Hard-sub, Soft-sub, Easy download",
+      "selfHosted": true
+    },
+    {
+      "rank": 32,
+      "name": "AniWorld",
+      "url": "https://aniworld.to/",
+      "filters": "Third party, Dub friendly, Hard-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 33,
+      "name": "AniChan",
+      "url": "https://anichan.to/",
+      "filters": "Self-host, Soft-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 34,
+      "name": "HIDIVE",
+      "url": "https://www.hidive.com/",
+      "filters": "Dub friendly, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 35,
+      "name": "Anikuro",
+      "url": "https://anikuro.ru/",
+      "filters": "Scraper, Self-host, Hard-sub, Soft-sub, Modern interface",
+      "selfHosted": true
+    },
+    {
+      "rank": 36,
+      "name": "bettermelon",
+      "url": "https://bettermelon.ru/",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 37,
+      "name": "Kisskh",
+      "url": "https://kisskh.co/Explore?type=3&sub=1&country=3",
+      "filters": "Self-host, Simple interface, Hard-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 38,
+      "name": "hianimes.se",
+      "url": "https://hianimes.se/home",
+      "filters": "Self-host",
+      "selfHosted": true
+    },
+    {
+      "rank": 39,
+      "name": "animekai.ro",
+      "url": "https://animekai.ro/",
+      "filters": "Self-host",
+      "selfHosted": true
+    },
+    {
+      "rank": 40,
+      "name": "FireAnime",
+      "url": "https://fireani.me/",
+      "filters": "Third party, Scraper, Dub friendly, Hard-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 41,
+      "name": "Anime-Loads",
+      "url": "https://www.anime-loads.org/",
+      "filters": "Third party, Dub friendly, Hard-sub, Easy download",
+      "selfHosted": false
+    },
+    {
+      "rank": 42,
+      "name": "WCO",
+      "url": "https://www.wcostream.tv/",
+      "filters": "Self-host, Old reliable, Dub friendly, Hard-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 43,
+      "name": "AnimeNoSub",
+      "url": "https://animenosub.to/",
+      "filters": "Third party, Hard-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 44,
+      "name": "KimoiTV",
+      "url": "https://kimoitv.com/list/Anime.html",
+      "filters": "Self-host, Simple interface, Easy download, Hard-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 45,
+      "name": "Otaku-Streamers",
+      "url": "https://otaku-streamers.com/",
+      "filters": "Self-host, Old reliable, Hard-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 46,
+      "name": "AV1 EnCodes",
+      "url": "https://av1please.com/",
+      "filters": "Self-host, Easy download, Soft-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 47,
+      "name": "Animo",
+      "url": "https://4animo.xyz/home",
+      "filters": "Self-host, Modern interface, Soft-sub, Hard-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 48,
+      "name": "Zenkai",
+      "url": "https://zenkai.to/home",
+      "filters": "Self-host, Soft-sub, Hard-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 49,
+      "name": "AniLight",
+      "url": "https://anilight.live/",
+      "filters": "Scraper, Soft-sub, Hard-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 50,
+      "name": "MeguAnimes",
+      "url": "https://meguanime.com/",
+      "filters": "Scraper, Self-host, Hard-sub, Soft-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 51,
+      "name": "Otakutsu",
+      "url": "https://otakutsu.cc/",
+      "filters": "Scraper, Soft-sub, Modern interface",
+      "selfHosted": false
+    },
+    {
+      "rank": 52,
+      "name": "JustAnime",
+      "url": "https://www.justanime.to/",
+      "filters": "Scraper, Soft-sub, Hard-sub, Easy download",
+      "selfHosted": false
+    },
+    {
+      "rank": 53,
+      "name": "Luna",
+      "url": "https://luna-stream.me/",
+      "filters": "Scraper, Hard-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 54,
+      "name": "AniXo",
+      "url": "https://anixo.online/",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 55,
+      "name": "Animeyubi",
+      "url": "https://animeyubi.com/",
+      "filters": "Scraper, Hard-sub, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 56,
+      "name": "Kazora",
+      "url": "https://kazora.cc/",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 57,
+      "name": "AniLast",
+      "url": "https://last1234.fun/",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 58,
+      "name": "YumeZone",
+      "url": "https://yumezone.live/",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 59,
+      "name": "Itachi",
+      "url": "https://itachi.tv/",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 60,
+      "name": "Kaori",
+      "url": "https://kaorii.app/",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 61,
+      "name": "LuffyTV",
+      "url": "https://luffytv.live/",
+      "filters": "Scraper, Soft-sub, Hard-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 62,
+      "name": "Anikura",
+      "url": "https://anikura.club/",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 63,
+      "name": "NekoWatch",
+      "url": "https://nekowatch.xyz/",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 64,
+      "name": "AnimeKizz",
+      "url": "https://animekizz.live/",
+      "filters": "Scraper, Soft-sub, Hard-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 65,
+      "name": "Kyren",
+      "url": "https://kyren.moe/",
+      "filters": "Scraper, Soft-sub, Hard-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 66,
+      "name": "PimpAnime",
+      "url": "https://pimpanime.nl/",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 67,
+      "name": "megaplay.su",
+      "url": "https://aniwatchtv.com.ro/",
+      "filters": "Self-host",
+      "selfHosted": true
+    },
+    {
+      "rank": 68,
+      "name": "Netflix",
+      "url": "https://www.netflix.com/browse/genre/7424",
+      "filters": "Modern interface, Dub friendly, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 69,
+      "name": "OceanVeil",
+      "url": "https://oceanveil.net/",
+      "filters": "Modern interface, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 70,
+      "name": "RetroCrush",
+      "url": "https://www.retrocrush.tv/",
+      "filters": "Modern interface, Dub friendly, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 71,
+      "name": "Yomi",
+      "url": "https://yomi.to/",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 72,
+      "name": "Anime Silo",
+      "url": "https://animesilo.cc/anime",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 73,
+      "name": "WatchAnimeX",
+      "url": "https://watchanimez.me/",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 74,
+      "name": "AniClipse",
+      "url": "https://aniclipse.com/",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 75,
+      "name": "animeTVplus",
+      "url": "https://animetvplus.xyz/",
+      "filters": "Scraper, Soft-sub, Hard-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 76,
+      "name": "Onianime",
+      "url": "https://onianime.eu/home",
+      "filters": "Scraper, Soft-sub, Modern interface",
+      "selfHosted": false
+    },
+    {
+      "rank": 77,
+      "name": "Animegers",
+      "url": "https://animegers.com/",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 78,
+      "name": "AnimeDex",
+      "url": "https://animedex.fun/",
+      "filters": "Scraper, Soft-sub, Hard-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 79,
+      "name": "Kawaii Anime",
+      "url": "https://kawaii-anime.com/",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 80,
+      "name": "StreamX",
+      "url": "https://streamex.sh/anime",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 81,
+      "name": "Sankanime",
+      "url": "https://sankanime.web.id/",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 82,
+      "name": "aniwavecomse",
+      "url": "https://aniwave.com.se/",
+      "filters": "Scraper, Dub friendly, Hard-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 83,
+      "name": "RamenFlix",
+      "url": "https://ramenflix.com/home",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 84,
+      "name": "Hulu",
+      "url": "https://www.hulu.com/hub/anime",
+      "filters": "Modern interface, Old reliable, Dub friendly, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 85,
+      "name": "Animeya",
+      "url": "https://www.animeya.cc/home",
+      "filters": "Scraper, Third party, Hard-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 86,
+      "name": "Enma",
+      "url": "https://www.enma.lol/",
+      "filters": "Scraper, Soft-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 87,
+      "name": "Anime-Dunya",
+      "url": "https://anime-dunya.com/",
+      "filters": "Self-host, Soft-sub",
+      "selfHosted": true
+    },
+    {
+      "rank": 88,
+      "name": "Kayoanimetv",
+      "url": "https://animixplay.fun/",
+      "filters": "Scraper, Hard-sub",
+      "selfHosted": false
+    },
+    {
+      "rank": 89,
+      "name": "AnimeWorld",
+      "url": "https://watchanimeworld.one/",
+      "filters": "",
+      "selfHosted": false
+    },
+    {
+      "rank": 90,
+      "name": "AnimeDekho",
+      "url": "https://animedekho.app/home/",
+      "filters": "",
+      "selfHosted": false
+    }
+  ],
+  "manga": [
+    {
+      "rank": 1,
+      "name": "Comix",
+      "url": "https://comix.to/",
+      "filters": "Official Rips, Mostly Scans, Modern interface, Scanlator Hub",
+      "selfHosted": false
+    },
+    {
+      "rank": 2,
+      "name": "Mangadotnet",
+      "url": "https://mangadot.net/",
+      "filters": "Official Rips, Modern interface, Scanlator Hub",
+      "selfHosted": false
+    },
+    {
+      "rank": 3,
+      "name": "Atsumaru",
+      "url": "https://atsu.moe/",
+      "filters": "Official Rips, Modern interface",
+      "selfHosted": false
+    },
+    {
+      "rank": 4,
+      "name": "Mangaball",
+      "url": "https://mangaball.net/",
+      "filters": "Official Rips, Mostly Scans, Multi Language, Scanlator Hub",
+      "selfHosted": false
+    },
+    {
+      "rank": 5,
+      "name": "MangaFire",
+      "url": "https://mangafire.to/home",
+      "filters": "Official Rips, Multi Language, Modern interface, Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 6,
+      "name": "Weeb Central",
+      "url": "https://weebcentral.com/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 7,
+      "name": "Mangago",
+      "url": "https://www.mangago.me/",
+      "filters": "Official Rips, Scanlator Hub",
+      "selfHosted": false
+    },
+    {
+      "rank": 8,
+      "name": "OniSaga",
+      "url": "https://onisaga.com/",
+      "filters": "Official Rips, Modern interface, Multi Language, Scanlator Hub",
+      "selfHosted": false
+    },
+    {
+      "rank": 9,
+      "name": "MKissa Manga",
+      "url": "https://mkissa.to/manga",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 10,
+      "name": "Bookwalker",
+      "url": "https://bookwalker.com/",
+      "filters": "Licensed",
+      "selfHosted": false
+    },
+    {
+      "rank": 11,
+      "name": "Rakuten Kobo",
+      "url": "https://www.kobo.com/en/ebooks/manga",
+      "filters": "Licensed",
+      "selfHosted": false
+    },
+    {
+      "rank": 12,
+      "name": "MangaTaro",
+      "url": "https://mangataro.org/home",
+      "filters": "Official Rips, Modern interface, Scanlator Hub, Multi Language",
+      "selfHosted": false
+    },
+    {
+      "rank": 13,
+      "name": "MangaCloud",
+      "url": "https://mangacloud.org/",
+      "filters": "Official Rips, Mostly Scans, Modern interface",
+      "selfHosted": false
+    },
+    {
+      "rank": 14,
+      "name": "MangaKatana",
+      "url": "https://mangakatana.com/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 15,
+      "name": "MangaK",
+      "url": "https://mangak.io/home",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 16,
+      "name": "XComic",
+      "url": "https://xcomic.me/",
+      "filters": "",
+      "selfHosted": false
+    },
+    {
+      "rank": 17,
+      "name": "Swarm",
+      "url": "https://swarm.ws/",
+      "filters": "Official Rips, Modern interface, Scanlator Hub, Multi Language",
+      "selfHosted": false
+    },
+    {
+      "rank": 18,
+      "name": "Cubari Proxy",
+      "url": "https://proxy.cubari.moe/",
+      "filters": "Official Rips, Modern interface, Multi Language",
+      "selfHosted": false
+    },
+    {
+      "rank": 19,
+      "name": "KaliScan",
+      "url": "https://kaliscan.io/home",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 20,
+      "name": "VyManga",
+      "url": "https://mangavyvy.com/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 21,
+      "name": "LikeManga",
+      "url": "https://likemanga.ink/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 22,
+      "name": "MANGA Plus",
+      "url": "https://mangaplus.shueisha.co.jp",
+      "filters": "Licensed",
+      "selfHosted": false
+    },
+    {
+      "rank": 23,
+      "name": "chikari.moe",
+      "url": "https://chikari.moe/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 24,
+      "name": "MangaHub",
+      "url": "https://mangahub.io/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 25,
+      "name": "Scans.gg",
+      "url": "https://scans.gg/",
+      "filters": "Mostly Scans, Modern interface, Scanlator Hub",
+      "selfHosted": false
+    },
+    {
+      "rank": 26,
+      "name": "Dynasty Reader",
+      "url": "https://dynasty-scans.com/",
+      "filters": "Mostly Scans, Scanlator Hub",
+      "selfHosted": false
+    },
+    {
+      "rank": 27,
+      "name": "Manganato.gg",
+      "url": "https://www.manganato.gg/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 28,
+      "name": "Coolmic",
+      "url": "https://coolmic.me/",
+      "filters": "Licensed",
+      "selfHosted": false
+    },
+    {
+      "rank": 29,
+      "name": "Omoi",
+      "url": "https://www.omoi.com/",
+      "filters": "Licensed",
+      "selfHosted": false
+    },
+    {
+      "rank": 30,
+      "name": "Zinmanga",
+      "url": "https://www.zinmanga.net/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 31,
+      "name": "Mangafox",
+      "url": "https://fanfox.net",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 32,
+      "name": "oManga",
+      "url": "https://omanga.to/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 33,
+      "name": "MangaFreak",
+      "url": "https://mangafreak.me",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 34,
+      "name": "MangaDE",
+      "url": "https://mangade.io/",
+      "filters": "Mostly Scans",
+      "selfHosted": false
+    },
+    {
+      "rank": 35,
+      "name": "MangaTown",
+      "url": "https://mangatown.com/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 36,
+      "name": "MangaHome",
+      "url": "https://www.mangahome.com/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 37,
+      "name": "ReiManga",
+      "url": "https://reimanga.com/",
+      "filters": "Mostly Scans",
+      "selfHosted": false
+    },
+    {
+      "rank": 38,
+      "name": "YomiManga",
+      "url": "https://yomimanga.com/",
+      "filters": "Mostly Scans",
+      "selfHosted": false
+    },
+    {
+      "rank": 39,
+      "name": "Ninekon",
+      "url": "https://app.ninekon.com/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 40,
+      "name": "ManhuaPlus",
+      "url": "https://manhuaplus.top/",
+      "filters": "manhua",
+      "selfHosted": false
+    },
+    {
+      "rank": 41,
+      "name": "Mangapill",
+      "url": "https://mangapill.com/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 42,
+      "name": "Mangakawaii",
+      "url": "https://www.mangakawaii.io/",
+      "filters": "Mostly Scans, Scanlator Hub",
+      "selfHosted": false
+    },
+    {
+      "rank": 43,
+      "name": "mangageko",
+      "url": "https://www.mgeko.cc/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 44,
+      "name": "Mangalink",
+      "url": "https://linkmanga.com/",
+      "filters": "",
+      "selfHosted": false
+    },
+    {
+      "rank": 45,
+      "name": "GodaComic",
+      "url": "https://manhuascans.org/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 46,
+      "name": "JP Book Store",
+      "url": "https://jpbookstore.com/collections/light-novel",
+      "filters": "Licensed",
+      "selfHosted": false
+    },
+    {
+      "rank": 47,
+      "name": "K MANGA",
+      "url": "https://kmanga.kodansha.com/",
+      "filters": "licensed",
+      "selfHosted": false
+    },
+    {
+      "rank": 48,
+      "name": "Pixiv Comics",
+      "url": "https://comic.pixiv.net/",
+      "filters": "Raws, Licensed",
+      "selfHosted": false
+    },
+    {
+      "rank": 49,
+      "name": "INKR",
+      "url": "https://comics.inkr.com/",
+      "filters": "Licensed",
+      "selfHosted": false
+    },
+    {
+      "rank": 50,
+      "name": "comico.moe",
+      "url": "https://comico.moe/",
+      "filters": "Official Rips, Multi Language, Modern interface",
+      "selfHosted": false
+    },
+    {
+      "rank": 51,
+      "name": "Lunar - Manga",
+      "url": "https://lunarx.to/manga",
+      "filters": "Official Rips, Multi Language, Modern interface, Scanlator Hub",
+      "selfHosted": false
+    },
+    {
+      "rank": 52,
+      "name": "JustManga",
+      "url": "https://justmanga.cc/",
+      "filters": "Official Rips, Multi Language, Modern interface",
+      "selfHosted": false
+    },
+    {
+      "rank": 53,
+      "name": "Yaoiscan",
+      "url": "https://yaoiscan.com/",
+      "filters": "Mostly Scans",
+      "selfHosted": false
+    },
+    {
+      "rank": 54,
+      "name": "MangaBay",
+      "url": "https://manga-bay.org/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 55,
+      "name": "MangaDex",
+      "url": "https://mangadex.org/",
+      "filters": "Multi Language, Mostly Scans, Modern interface, Scanlator Hub",
+      "selfHosted": false
+    },
+    {
+      "rank": 56,
+      "name": "RawOtaku",
+      "url": "https://rawotaku.com/",
+      "filters": "Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 57,
+      "name": "KT9",
+      "url": "https://klto9.com/",
+      "filters": "Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 58,
+      "name": "Hachiraw",
+      "url": "https://hachiraw.win/",
+      "filters": "Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 59,
+      "name": "MangaRaw4u",
+      "url": "https://mangaraw4u.com/",
+      "filters": "Official Rips, Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 60,
+      "name": "Nicomanga",
+      "url": "https://nicomanga.com/",
+      "filters": "Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 61,
+      "name": "Rawdevart",
+      "url": "https://rawdevart.art/",
+      "filters": "Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 62,
+      "name": "RawSakura",
+      "url": "https://rawsakura.org/",
+      "filters": "Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 63,
+      "name": "NihonKuni",
+      "url": "https://nihonkuni.com/",
+      "filters": "Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 64,
+      "name": "Raw Manga",
+      "url": "https://mangaraw.org/",
+      "filters": "Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 65,
+      "name": "Rawkuma",
+      "url": "https://rawkuma.net/",
+      "filters": "Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 66,
+      "name": "漫画 raw",
+      "url": "https://mangaraw.best/",
+      "filters": "Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 67,
+      "name": "WeLoMa",
+      "url": "https://weloma.art/",
+      "filters": "Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 68,
+      "name": "Spoilerplus",
+      "url": "https://spoilerplus.tv/",
+      "filters": "Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 69,
+      "name": "RawLazy",
+      "url": "https://rawlazy.io/",
+      "filters": "Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 70,
+      "name": "raw1001",
+      "url": "https://raw1001.net/",
+      "filters": "Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 71,
+      "name": "Baozi Manhua",
+      "url": "https://baozimh.org/",
+      "filters": "Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 72,
+      "name": "Twmanga",
+      "url": "https://www.twbzmg.com/",
+      "filters": "Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 73,
+      "name": "SenManga",
+      "url": "https://raw.senmanga.com/",
+      "filters": "Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 74,
+      "name": "RawFree",
+      "url": "https://rawfree.me/",
+      "filters": "Raws",
+      "selfHosted": false
+    },
+    {
+      "rank": 75,
+      "name": "MangaPlaza",
+      "url": "https://mangaplaza.com/",
+      "filters": "Licensed",
+      "selfHosted": false
+    },
+    {
+      "rank": 76,
+      "name": "Manga Mirai",
+      "url": "https://mangamirai.com/",
+      "filters": "Licensed",
+      "selfHosted": false
+    },
+    {
+      "rank": 77,
+      "name": "MangaMikan",
+      "url": "https://mangamikan.com/",
+      "filters": "",
+      "selfHosted": false
+    },
+    {
+      "rank": 78,
+      "name": "MangaBerri",
+      "url": "https://mangaberri.com/home.php",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 79,
+      "name": "MangaCherri",
+      "url": "https://mangacherri.com/home.php",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 80,
+      "name": "Danke fürs Lesen",
+      "url": "https://danke.moe/",
+      "filters": "Mostly Scans",
+      "selfHosted": false
+    },
+    {
+      "rank": 81,
+      "name": "Hachirumi",
+      "url": "https://hachirumi.com/",
+      "filters": "Mostly Scans",
+      "selfHosted": false
+    },
+    {
+      "rank": 82,
+      "name": "KDT Scans",
+      "url": "https://silentquill.net/",
+      "filters": "Mostly Scans",
+      "selfHosted": false
+    },
+    {
+      "rank": 83,
+      "name": "ManhuaBuddy",
+      "url": "https://manhuabuddy.com/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 84,
+      "name": "ReadManga",
+      "url": "https://readmanga.cc/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 85,
+      "name": "Lilymanga",
+      "url": "https://lilymanga.net/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 86,
+      "name": "Comicless",
+      "url": "https://comicless.com/library/?cid=3",
+      "filters": "Mostly Scans",
+      "selfHosted": false
+    },
+    {
+      "rank": 87,
+      "name": "MangaDoom",
+      "url": "https://manga-doom.com/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 88,
+      "name": "MangaRead",
+      "url": "https://mangaread.org/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 89,
+      "name": "Aqua manga",
+      "url": "https://aquareader.org/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 90,
+      "name": "Todaymanga",
+      "url": "https://todaymanga.com/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 91,
+      "name": "MangaPanda",
+      "url": "https://www.mangapanda.in/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 92,
+      "name": "Manhua Hot",
+      "url": "https://manhuahot.com/",
+      "filters": "Official Rips",
+      "selfHosted": false
+    },
+    {
+      "rank": 93,
+      "name": "Mangasushi",
+      "url": "https://mangasushi.org/",
+      "filters": "Mostly Scans",
+      "selfHosted": false
+    }
+  ]
+}
