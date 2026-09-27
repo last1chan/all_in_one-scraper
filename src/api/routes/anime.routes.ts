@@ -153,7 +153,7 @@ export async function animeRoutes(fastify: FastifyInstance) {
       anidbapp: 'animeheaven', // Megumin -> AnimeHeaven
       reanime: 'animegg',      // Taiga -> AnimeGG
       animedunya: 'animeonsen', // Zero Two -> AnimeOnsen
-      aniwaves: 'anichan',     // Mikasa -> AniChan
+      aniwaves: 'aniwaves',     // Mikasa -> AniWaves
       anikoto: 'anichan',      // Asuna -> AniChan
       anibd: 'anichan',        // Rem -> AniChan
     };
