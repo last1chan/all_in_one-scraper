@@ -7,12 +7,11 @@ import * as cheerio from 'cheerio';
 export class MangaKatanaProvider extends BaseMangaProvider {
   readonly name = 'mangakatana';
   readonly defaultBaseUrl = 'https://mangakatana.com';
-  readonly mirrorUrls = ["https://mangakatana.com"];
+  readonly mirrorUrls = ['https://mangakatana.com'];
   readonly languages = ['en'];
   readonly isSelfHosted = true;
   readonly librarySize = '38,000+';
   readonly serverType = 'self-hosted' as const;
-  
 
   constructor() {
     super();
@@ -34,22 +33,22 @@ export class MangaKatanaProvider extends BaseMangaProvider {
     if (cached) return cached;
 
     const baseUrl = this.getBaseUrl();
-    const url = `${baseUrl}/?search=${encodeURIComponent(query.trim())}`;
+    const url = `${baseUrl}/?search=${encodeURIComponent(query.trim())}&search_by=book_name`;
 
     try {
-      const response = await axios.get<string>(url, { headers: this.getHeaders(), timeout: 10000 });
+      const response = await axios.get<string>(url, { headers: this.getHeaders(), timeout: 15000 });
       const $ = cheerio.load(response.data);
       const results: MangaSearchResult[] = [];
 
       $('#book_list .item, .unit').each((_, el) => {
-        const link = $(el).is('a') ? $(el) : $(el).find('a').first();
+        const link = $(el).is('a') ? $(el) : $(el).find('h3.title a, .title a, a').first();
         const href = link.attr('href') || '';
-        const match = href.match(new RegExp('/manga/([^/?#]+)'));
+        const match = href.match(/\/manga\/([^/?#]+)/);
         if (!match) return;
 
         const id = match[1];
-        const title = $(el).find('h3, h2, .title, .name').text().trim() || link.attr('title') || link.text().trim();
-        const cover = $(el).find('img').attr('data-src') || $(el).find('img').attr('src') || null;
+        const title = link.text().trim() || $(el).find('h3, h2, .title').text().trim();
+        const cover = $(el).find('.wrap_img img, img').attr('src') || $(el).find('img').attr('data-src') || null;
 
         if (id && title && !results.some((r) => r.id === id)) {
           results.push({
@@ -74,24 +73,29 @@ export class MangaKatanaProvider extends BaseMangaProvider {
     if (cached) return cached;
 
     const baseUrl = this.getBaseUrl();
-    const url = `${baseUrl}/manga/${mangaId}`;
+    const cleanId = mangaId.replace(/^(https?:\/\/[^/]+\/manga\/|\/manga\/)/, '');
+    const url = `${baseUrl}/manga/${cleanId}`;
 
     try {
-      const response = await axios.get<string>(url, { headers: this.getHeaders(), timeout: 10000 });
+      const response = await axios.get<string>(url, { headers: this.getHeaders(), timeout: 15000 });
       const $ = cheerio.load(response.data);
       const chapters: MangaChapter[] = [];
 
-      $('.chapters .chapter a').each((_, el) => {
-        const href = $(el).attr('href') || '';
-        const match = href.match(/\/manga\/([^?#]+)/);
-        const chId = match ? match[1] : (href.split('/').filter(Boolean).pop() || href);
-        const text = $(el).text().trim();
-        const chNumMatch = text.match(/(\d+(?:\.\d+)?)/);
-        const chapter = chNumMatch ? chNumMatch[1] : '1';
+      $('.chapters table tr, .chapters .chapter').each((_, el) => {
+        const link = $(el).find('.chapter a, a').first();
+        const href = link.attr('href') || '';
+        const match = href.match(/\/manga\/[^/]+\/(c[^/?#]+)/);
+        const chSlug = match ? match[1] : href.split('/').filter(Boolean).pop();
+        if (!chSlug) return;
 
-        if (chId && !chapters.some((c) => c.id === chId)) {
+        const text = link.text().trim();
+        const chNumMatch = text.match(/Chapter\s+([\d.]+)/i) || text.match(/([\d.]+)/);
+        const chapter = chNumMatch ? chNumMatch[1] : '1';
+        const fullId = `${cleanId}$${chSlug}`;
+
+        if (!chapters.some((c) => c.id === fullId)) {
           chapters.push({
-            id: chId,
+            id: fullId,
             chapter,
             title: text || `Chapter ${chapter}`,
           });
@@ -111,22 +115,25 @@ export class MangaKatanaProvider extends BaseMangaProvider {
     if (cached) return cached;
 
     const baseUrl = this.getBaseUrl();
-    const url = chapterId.startsWith('http')
-      ? chapterId
-      : `${baseUrl}/manga/${chapterId}`;
+    let url: string;
+    if (chapterId.startsWith('http')) {
+      url = chapterId;
+    } else if (chapterId.includes('$')) {
+      const [mId, ch] = chapterId.split('$');
+      url = `${baseUrl}/manga/${mId}/${ch}`;
+    } else {
+      url = `${baseUrl}/manga/${chapterId}`;
+    }
 
     try {
-      const response = await axios.get<string>(url, { headers: this.getHeaders(), timeout: 10000 });
-      const $ = cheerio.load(response.data);
+      const response = await axios.get<string>(url, { headers: this.getHeaders(), timeout: 20000 });
       const pages: MangaChapterPage[] = [];
 
-      // MangaKatana embeds images in JavaScript variable array
-      const jsMatch = response.data.match(/var\s+\w+\s*=\s*\[([^\]]+)\]/);
+      // MangaKatana embeds images in JavaScript variable array (var thzq = ['...'])
+      const jsMatch = response.data.match(/var\s+(?:thzq|\w+)\s*=\s*(\[[^\]]+\]);?/);
       if (jsMatch) {
-        const urls = jsMatch[1]
-          .split(',')
-          .map((s) => s.trim().replace(/^['"]|['"]$/g, ''))
-          .filter((s) => s.startsWith('http'));
+        const raw = jsMatch[1];
+        const urls = [...raw.matchAll(/['"](https?:[^'"]+)['"]/g)].map((m) => m[1]);
         urls.forEach((img, idx) => {
           pages.push({
             page: idx + 1,
@@ -137,7 +144,8 @@ export class MangaKatanaProvider extends BaseMangaProvider {
       }
 
       if (pages.length === 0) {
-        $('#imgs img, .wrap_img img').each((idx, el) => {
+        const $ = cheerio.load(response.data);
+        $('#imgs img, .wrap_img img, .chapter_content img').each((idx, el) => {
           const src = $(el).attr('data-src') || $(el).attr('src');
           if (src && !src.includes('placeholder') && !src.includes('loading')) {
             pages.push({

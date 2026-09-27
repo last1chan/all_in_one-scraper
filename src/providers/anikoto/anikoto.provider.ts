@@ -1,4 +1,4 @@
-﻿import { BaseProvider } from '../base-provider.js';
+import { BaseProvider } from '../base-provider.js';
 import { AnimeSearchResult, Episode, Server, StreamResolutionResult, VideoSource } from '../../types/anime.js';
 import { HttpClient } from '../../core/http-client.js';
 import { extractorManager } from '../../extractors/index.js';
@@ -282,6 +282,7 @@ export class AnikotoProvider extends BaseProvider {
     }
 
     // Use extractor manager
+    let extractedOrigin: string | null = null;
     try {
       const extracted = await extractorManager.extract(embedUrl, 'https://hianimes.re/');
       if (extracted) {
@@ -289,6 +290,7 @@ export class AnikotoProvider extends BaseProvider {
         subtitles.push(...extracted.subtitles);
         if (!intro && extracted.intro) intro = extracted.intro;
         if (!outro && extracted.outro) outro = extracted.outro;
+        if (extracted.origin) extractedOrigin = extracted.origin;
       }
     } catch (err: any) {
       // If extractor fails, push fallback embed source
@@ -307,6 +309,12 @@ export class AnikotoProvider extends BaseProvider {
       });
     }
 
+    const streamReferer = extractedOrigin
+      ? `${extractedOrigin}/`
+      : embedUrl.startsWith('http')
+      ? `${new URL(embedUrl).origin}/`
+      : `${baseUrl}/`;
+
     const result: StreamResolutionResult = {
       provider: this.name,
       animeId,
@@ -318,7 +326,7 @@ export class AnikotoProvider extends BaseProvider {
       intro,
       outro,
       headers: {
-        Referer: `${baseUrl}/`,
+        Referer: streamReferer,
       },
     };
 

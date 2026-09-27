@@ -7,23 +7,22 @@ import * as cheerio from 'cheerio';
 export class WeebCentralProvider extends BaseMangaProvider {
   readonly name = 'weebcentral';
   readonly defaultBaseUrl = 'https://weebcentral.com';
-  readonly mirrorUrls = ["https://weebcentral.com"];
+  readonly mirrorUrls = ['https://weebcentral.com'];
   readonly languages = ['en'];
   readonly isSelfHosted = true;
   readonly librarySize = '35,000+';
   readonly serverType = 'self-hosted' as const;
-  
 
   constructor() {
     super();
     this.init();
   }
 
-  private getHeaders(): Record<string, string> {
+  private getHeaders(customReferer?: string): Record<string, string> {
     return {
       'User-Agent':
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
-      'Referer': `${this.getBaseUrl()}/`,
+      'Referer': customReferer || `${this.getBaseUrl()}/`,
       'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
     };
   }
@@ -34,22 +33,26 @@ export class WeebCentralProvider extends BaseMangaProvider {
     if (cached) return cached;
 
     const baseUrl = this.getBaseUrl();
-    const url = `${baseUrl}/search?keyword=${encodeURIComponent(query.trim())}`;
+    const url = `${baseUrl}/search/data?text=${encodeURIComponent(query.trim())}`;
 
     try {
-      const response = await axios.get<string>(url, { headers: this.getHeaders(), timeout: 10000 });
+      const response = await axios.get<string>(url, {
+        headers: this.getHeaders(`${baseUrl}/search`),
+        timeout: 15000,
+      });
       const $ = cheerio.load(response.data);
       const results: MangaSearchResult[] = [];
 
-      $('.manga-card, article.series').each((_, el) => {
-        const link = $(el).is('a') ? $(el) : $(el).find('a').first();
+      $('article').each((_, el) => {
+        const link = $(el).find('a[href*="/series/"]').first();
         const href = link.attr('href') || '';
-        const match = href.match(new RegExp('/series/([^/?#]+)'));
+        const match = href.match(/\/series\/([a-zA-Z0-9]+)(?:\/([^/?#]+))?/);
         if (!match) return;
 
         const id = match[1];
-        const title = $(el).find('h3, h2, .title, .name').text().trim() || link.attr('title') || link.text().trim();
-        const cover = $(el).find('img').attr('data-src') || $(el).find('img').attr('src') || null;
+        const slug = match[2] || '';
+        const title = $(el).find('.font-bold').text().trim() || slug.replace(/-/g, ' ');
+        const cover = $(el).find('img').attr('src') || $(el).find('source').attr('srcset') || null;
 
         if (id && title && !results.some((r) => r.id === id)) {
           results.push({
@@ -74,23 +77,30 @@ export class WeebCentralProvider extends BaseMangaProvider {
     if (cached) return cached;
 
     const baseUrl = this.getBaseUrl();
-    const url = `${baseUrl}/series/${mangaId}`;
+    const url = `${baseUrl}/series/${mangaId}/full-chapter-list`;
 
     try {
-      const response = await axios.get<string>(url, { headers: this.getHeaders(), timeout: 10000 });
+      const response = await axios.get<string>(url, {
+        headers: this.getHeaders(),
+        timeout: 15000,
+      });
       const $ = cheerio.load(response.data);
       const chapters: MangaChapter[] = [];
 
-      $('a[href*="/chapter/"]').each((_, el) => {
+      $('a[href*="/chapters/"]').each((_, el) => {
         const href = $(el).attr('href') || '';
-        const chId = href.split('/').filter(Boolean).pop() || href;
-        const text = $(el).text().trim();
-        const chNumMatch = text.match(/(\d+(?:\.\d+)?)/);
-        const chapter = chNumMatch ? chNumMatch[1] : '1';
+        const match = href.match(/\/chapters\/([a-zA-Z0-9]+)/);
+        if (!match) return;
 
-        if (chId && !chapters.some((c) => c.id === chId)) {
+        const id = match[1];
+        const titleSpan = $(el).find('span.grow > span').first().text().trim();
+        const text = titleSpan || $(el).text().replace(/\s+/g, ' ').trim();
+        const numMatch = text.match(/Chapter\s+([\d.]+)/i) || text.match(/([\d.]+)/);
+        const chapter = numMatch ? numMatch[1] : '1';
+
+        if (!chapters.some((c) => c.id === id)) {
           chapters.push({
-            id: chId,
+            id,
             chapter,
             title: text || `Chapter ${chapter}`,
           });
@@ -110,19 +120,23 @@ export class WeebCentralProvider extends BaseMangaProvider {
     if (cached) return cached;
 
     const baseUrl = this.getBaseUrl();
-    const url = `${baseUrl}/chapter/${chapterId}`;
+    const url = `${baseUrl}/chapters/${chapterId}/images?reading_style=long_strip`;
 
     try {
-      const response = await axios.get<string>(url, { headers: this.getHeaders(), timeout: 10000 });
+      const response = await axios.get<string>(url, {
+        headers: this.getHeaders(),
+        timeout: 15000,
+      });
       const $ = cheerio.load(response.data);
       const pages: MangaChapterPage[] = [];
 
-      $('.reader-container img, img.page-image').each((idx, el) => {
-        const src = $(el).attr('data-src') || $(el).attr('src');
-        if (src && !src.includes('placeholder') && !src.includes('loading')) {
+      $('img').each((idx, el) => {
+        const src = $(el).attr('src') || $(el).attr('data-src');
+        if (src && (src.startsWith('http') || src.startsWith('//'))) {
+          const img = src.startsWith('//') ? `https:${src}` : src;
           pages.push({
             page: idx + 1,
-            img: src.startsWith('//') ? `https:${src}` : src,
+            img,
             headerReferer: `${baseUrl}/`,
           });
         }
